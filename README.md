@@ -14,6 +14,8 @@ In this workshop we'll
 
 # Getting started with HAX.psu
 
+[Tutorial videos for getting started](https://www.youtube.com/playlist?list=PLlJjKfvF9oaOb60T3wW5vfkCrjDRWFJHc)
+
 - Go to https://hax.psu.edu and click Login
 - Not part of Penn State? Try HAX using https://hax.cloud
 
@@ -57,7 +59,9 @@ This is how the team builds out sites and works on the platform locally.
 npm install @haxtheweb/create --global
 ```
 
-If you don't have npm / nodejs installed you can do so here: https://nodejs.org/ then run the previous line again
+If you don't have npm / nodejs installed you can do so here: https://nodejs.org/ then run the previous line again.
+
+[Common install / command issues](https://github.com/haxtheweb/edtechjoker/blob/master/common-issues.md)
 
 - Navigate to the folder you want to build a site in
 - run `hax start` and see the colorful ascii art load up
