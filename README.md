@@ -1,129 +1,74 @@
 # HAX Portfolio Site Workshop
 
-Welcome! In this workshop, you'll learn how to install the HAX CLI and create a 3-page portfolio site from scratch.
+In this workshop we'll
 
-## Prerequisites
+- Learn how to use the HAX web editor to build a documentation or portfolio website
+- Learn how to install HAX cli locally on your machine to build sites
+- Publish sites from your computer to https://surge.sh for free, static website hosting
+- Learn how to get involved with the HAX community
 
-- A computer with internet access
-- Basic familiarity with using the command line/terminal
+# What is HAX
+- HAX is a modern web site building editor founded at Penn State
+- You can quickly build websites that you can download and take with you
+- HAX sites have no need for a backend other than for editing them. All files are static and work anywhere!
 
-## Part 1: Installing HAX CLI
+# Getting started with HAX.psu
 
-### Step 1: Install Node.js (if not already installed)
+- Go to https://hax.psu.edu and click Login
+- Not part of Penn State? Try HAX our using https://hax.cloud
 
-HAX requires Node.js version 18 or higher.
+1. Create a new site
+2. Select the type of site (This just selects a theme which can be changed later)
+3. Name your site and pop the confetti, you've deployed a new website with HAX!
 
-1. Check if you have Node.js installed:
-   ```bash
-   node --version
-   ```
+## Common operations
+- Add pages by hitting add page.
+- Edit pages by clicking the edit button. You can now click and modify the content of the page
+- If you want to change the title, click on the "Select to edit Page details" label, then you can modify settings in the left hand panel
+- Clicking on any block in the page allows you to have additional options of things to do with that block
 
-2. If you don't have Node.js, download and install it from [nodejs.org](https://nodejs.org/)
+## Merlin knows all
+- Clicking on Merlin or typing `/` on a blank paragraph can call up Merlin
+- Merlin allows you to upload files, insert blocks, download your site and more
+- Start typing the thing you want to do into Merlin to watch it filter what's possible
 
-### Step 2: Install HAX CLI
+## Site Actions
+- You can change your theme and other settings under Site Actions -> Site Settings
+- This lets you modify SEO settings, the theme, some color values and more.
+- Try changing between the different themes now
 
-Install the HAX CLI globally using npm:
+## Outline Designer
+- Located under Site Actions -> Outline Designer
+- Outline Designer allows you to quickly build out the hierarchy of your website
+- Let's add some pages and rename them quickly here
 
-```bash
-npm install -global @haxtheweb/create
+# Now it's your turn to build whatever you want
+- Use HAX to build a small documentation site for your projects this weekend
+- Try using the `clean-one` or `clean-two` themes, as these are primed for documentation
+- Using the outline designer, make a pages for Who your team is, Project goals, Code, Resources and anything else you want
+- Now let's edit the content and add images using Merlin's Magic File Wand
+
+# Installing HAX CLI to build sites on your machine
+
+Running 
 ```
-
-### Step 3: Verify Installation
-
-Check that HAX is installed correctly:
-
-```bash
-hax --version
-```
-
-You should see the version number displayed.
-
-## Part 2: Creating Your Portfolio Site
-
-### Step 1: Create a New HAX Site
-
-1. Navigate to where you want to create your site:
-   ```bash
-   cd ~/Documents
-   ```
-
-2. Create a new site called "my-portfolio":
-   ```bash
-   hax site
-   ```
-
-3. When prompted, name your site: `my-portfolio`
-
-4. When asked to select a theme, choose: `portfolio`
-
-### Step 2: Start the Development Server
-
-Navigate into your new site and start the server:
-
-```bash
-cd my-portfolio
+# this allows you to then use hax command
+npm install @haxtheweb/create --global
+# then run this for interactive prompt
 hax start
 ```
 
-Your site will open in your default browser at `http://localhost:3000`
+If you don't have npm / nodejs installed you can do so here: https://nodejs.org/ then run the previous line
 
-## Part 3: Understanding the HAX Editor
+- Walk through creating a site with the `hax start` or `hax site` command
+- Name your site and select the theme
+- A local server will launch so you can start building out your site but on your own file system!
 
-Before we create pages, let's understand the HAX interface:
+## Publishing to surge.sh
+- Close the process in the terminal for your hax site
+- type `hax site` while in the folder containing your site
+- options related to the site will show up; select publish
+- step through the surge.sh publishing steps
+- You'll get a URL which you can go to
 
-- **Edit Mode**: Click the pencil icon to enter edit mode
-- **Block Menu**: Click the `+` button to add new content blocks
-- **Block Actions**: Hover over blocks to see edit, delete, and move options
-- **Settings Panel**: Click on a block to see its properties in the right panel
-- **Save**: Click save and the HTML of the page is written to the system
-- **Add Page**: Click to add a blank new page
-
-## Part 4: Creating Your Three Pages
-
-### Page 1: About
-
-- Click the first page in the site
-- Click edit in the top left
-- Click the "Select to edit Page details" area that appear just below the page title
-- Use this to rename the page or change details about the page
-
-#### Sample Content for About Page:
-
-**Add a Heading:**
-- click a paragraph or empty area just below the page details.
-- type the `/` key to pull up "merlin". Merlin lets you do any operation in HAX!
-- type heading to add an h2. Or type `##` followed by a spacebar to make a quick heading
-- Type: `About Me`
-
-**Add a Paragraph:**
-- Hit enter to move down a line and create a paragraph
-   ```
-   Hi, I'm [Your Name]! I'm a passionate web developer and designer who loves creating meaningful digital experiences. I believe in the power of open source technology and continuous learning.
-   ```
-
-**Add an Image:**
-- Click Merlin in the top right
-- Select the "Magic File Wand" program
-- Find an image on your computer or download and use https://placekitten.com/400/300
-- Add it to the page
-
-**Add More Content:**
-1. Add another paragraph block
-2. Type:
-   ```
-   I specialize in web development, with experience in HTML, CSS, JavaScript, and modern web components. When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or enjoying the outdoors.
-   ```
-
-# Other content to try out
-- Click Blocks and explore the dozens of page blocks you can add with HAX
-- Pasting a youtube link into a blank paragraph will embed it as a video or use the block
-- Click on the block in the page to see and edit the block's settings
-
-When your ready to save your work, hit save and the content will immediately be updated and published for others to see!
-
-## Resources
-
-- HAX Documentation: Check the official docs for more features
-- HAX Community: Join the community for support and inspiration
-- Web Components: Learn more about the technology powering HAX
-
+Congrats, you have a site that's kept up to date by the HAX content delivery network!
